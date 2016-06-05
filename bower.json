@@ -1,0 +1,20 @@
+{
+  "name": "show-me-the-money",
+  "description": "Financial Education site, where you can buy courses to manage your money.",
+  "main": "",
+  "authors": [
+    "Sydney Smith <sydmac@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/iamsydsmith/show-me-the-money",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.6"
+  }
+}
