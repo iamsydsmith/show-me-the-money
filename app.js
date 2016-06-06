@@ -29,6 +29,7 @@ app.use(express.static(path.join(__dirname, 'bower_components')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/api/courses', courses);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -3,11 +3,32 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script type="text/javascript" src="angular/angular.min.js" defer></script>
-    <script type="text/javascript" src="javascripts/client.js" defer></script>
+    <base href="/">
   </head>
   <body ng-app="coursesApp" ng-controller="coursesCtrl as ctrl">
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+
+    <div>
+      <h2>Poor man's Nav Bar</h2>
+      <a ui-sref="home">Home</a> |
+      <a ui-sref="about">About</a> |
+      <a ui-sref="map">Map</a> |
+      <a ui-sref="courses">Courses</a>
+    </div>
+
+    <div ui-view=""></div>
+
+    <section id="graph"></section>
+
+
+    <script type="text/javascript" src="angular/angular.min.js" defer></script>
+    <script type="text/javascript" src="angular-ui-router/release/angular-ui-router.min.js" defer></script>
+    <script type="text/javascript" src="javascripts/client.js" defer></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8" defer></script>
+    <script src="http://d3js.org/queue.v1.min.js" defer></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.20/topojson.js" defer></script>
+    <script src="http://cdn.jsdelivr.net/lodash/4.13.1/lodash.js" defer></script>
+    <script src="javascripts/map.js" defer></script>
   </body>
 </html>

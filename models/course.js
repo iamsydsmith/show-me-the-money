@@ -6,8 +6,8 @@ var CourseSchema = new mongoose.Schema({
   description: String,
   tagline: String,
   teacher_name: String,
-  teacher_photo: String;
-  price: String,
+  teacher_photo: String,
+  price: String
 }, { timestamps: true } );
 
 module.exports = mongoose.model('Course', CourseSchema);
