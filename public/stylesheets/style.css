@@ -1,27 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
 a {
   color: #00B7FF;
 }
+.about {
+  text-align: center;
+}
+.about p {
+  padding: 50px;
+}
 
 .rChart {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
       width: 1260px;
       height: 630px;
 }
 
-#disqus_thread{
+/*#disqus_thread{
       padding-top: 100px;
-    }
+    }*/
 
 .datamaps {
+  padding: 20px;
   position: absolute;
 }
 
@@ -29,6 +28,10 @@ a {
   text-align: center;
   border: 5px solid yellow;
   font-family: "Merriweather";
+}
+
+#popup-template {
+    border: 5px solid yellow;
 }
 
 

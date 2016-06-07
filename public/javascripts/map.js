@@ -1,6 +1,5 @@
 (function(){
 
-
  var chartParams = {
  "dom": "map",
 "width":    1260,
@@ -325,8 +324,8 @@
 },
 "geographyConfig": {
  "popupTemplate":  function(geography, data){
-    return '<div class="hoverinfo"><h2><strong>' + geography.properties.name +
-      '</strong></h2> <p>Average Balance: $' + data.AverageBalance + '</p></div>';
+    return '<div class="hoverinfo"><h3><strong>' + geography.properties.name +
+      '</strong></h3> <p>Average Balance: $' + data.AverageBalance + '</p></div>';
   }
 },
 "id": "map"
