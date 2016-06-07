@@ -1,4 +1,4 @@
-angular.module('coursesApp',['ui.router']);
+angular.module('coursesApp', ['ui.router']);
 
 angular.module('coursesApp')
 .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
@@ -14,10 +14,6 @@ angular.module('coursesApp')
     .state('about',  {
       url:"/about",
       templateUrl: "views/about.html"
-    })
-    .state('map', {
-      url:"/map",
-      templateUrl: "views/map.html"
     })
     .state('courses', {
       url: "/courses",
