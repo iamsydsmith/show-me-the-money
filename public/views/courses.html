@@ -1,6 +1,13 @@
-<h3>Courses</h3>
 
+<div id="page-content">
+  <section class="courses-banner">
+    <h3>Courses</h3>
+  </section>
+  <ul>
     <li ng-repeat="course in ctrl.courses">
-    <a ng-click="ctrl.goShowPage(course)"><img class="course" src="{{ course.photo }}">{{ course.name}}</a>
-
-</ul>
+    <a ng-click="ctrl.goShowPage(course)"><img class="course" src="{{ course.photo }}"></a>
+    <a ng-click="ctrl.goShowPage(course)"><p>{{ course.name}}</p></a>
+    <p>{{ course.description }}</p>
+    </li>
+  </ul>
+</div>

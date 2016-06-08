@@ -34,6 +34,18 @@ a {
   width: 300px;
 }
 
+.courses-banner {
+  position: relative;
+  height: 400px;
+  background-image: url(/img/courses-photo.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #690d38;
+  color: #fafafa;
+}
+
+}
 
 
 
