@@ -30,9 +30,10 @@ a {
   font-family: "Merriweather";
 }
 
-#popup-template {
-    border: 5px solid yellow;
+.course {
+  width: 300px;
 }
+
 
 
 
