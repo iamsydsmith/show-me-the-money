@@ -3,6 +3,7 @@
 a {
   color: #00B7FF;
 }
+
 .about {
   text-align: center;
 }
@@ -30,8 +31,30 @@ a {
   font-family: "Merriweather";
 }
 
-.course {
-  width: 300px;
+.alc-courses {
+    margin: 35px auto;
+    max-width: 1250px;
+}
+
+.banner-text{
+  text-align: center;
+  font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform:uppercase;
+  font-weight:700;
+  font-size:70px;
+  line-height:50px;
+  margin-bottom:25px;
+  color:#c65a57;
+}
+
+.column {
+    padding-left: 75px !important;
+    padding-right: 75px !important;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 .courses-banner {
@@ -42,11 +65,68 @@ a {
   background-position: center center;
   background-repeat: no-repeat;
   background-color: #690d38;
-  color: #fafafa;
 }
 
+.course-card {
+    border-radius: 3px;
+    box-shadow: 1px 1px 0 #eaeaea;
+    position: relative;
+    margin-bottom: 30px;
+    background: #ffffff;
+    height: 451px;
 }
 
+.course-card__img-container {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    max-height: 220px;
+}
+
+.course-card__img {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    width: 100%;
+    height: auto;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.course-card__body {
+    padding: 20px 20px 10px;
+}
+
+.course-card__instructor-name {
+    font-size: 14px;
+}
+
+.course-card__price {
+    color: #690d38;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: right;
+    line-height: 1;
+    word-wrap: break-word;
+}
+
+.course-card__title {
+    color: #5b5b5b;
+    font-size: 18px;
+}
+
+.course-card__description {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #9b9b9b;
+    word-wrap: break-word;
+}
+
+.course-card__cta {
+    padding: 0 20px;
+}
 
 
 

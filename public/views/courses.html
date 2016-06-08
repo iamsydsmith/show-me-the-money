@@ -1,13 +1,39 @@
-
-<div id="page-content">
-  <section class="courses-banner">
-    <h3>Courses</h3>
-  </section>
-  <ul>
-    <li ng-repeat="course in ctrl.courses">
-    <a ng-click="ctrl.goShowPage(course)"><img class="course" src="{{ course.photo }}"></a>
-    <a ng-click="ctrl.goShowPage(course)"><p>{{ course.name}}</p></a>
-    <p>{{ course.description }}</p>
-    </li>
-  </ul>
-</div>
+<section class="courses-banner">
+        <div class="banner-text">Courses</div>
+</section>
+<section class='alc-courses'>
+    <div class="column">
+        <div class="row">
+            <div class='col-lg-4 col-md-4 col-sm-6 col-xs-12' ng-repeat="course in ctrl.courses">
+                <div class="course-card">
+                    <div class="course-card__img-container">
+                        <a ng-click="ctrl.goShowPage(course)"><img class="course-card__img" src="{{ course.photo }}"></a>
+                    </div>
+                    <div class="course-card__body">
+                        <div class="row">
+                            <div class='col-xs-7'>
+                                <div class='course-card__instructor-name'>{{ course.teacher_name }}</div>
+                            </div>
+                            <div class='col-xs-5'>
+                                <div class='course-card__price'>{{ course.price }}</div>
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-md-12'>
+                                <h4 class='course-card__title'>{{ course.name }}</h4>
+                                <p class='course-card__description'>{{ course.tagline }}</p>
+                            </div>
+                        </div>
+                        <div class='course-card__cta'>
+                            <div class='row'>
+                                <div class='col-md-12'>
+                                    <a class="btn btn-primary btn-block" ng-click="ctrl.goShowPage(course)">View Course</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
