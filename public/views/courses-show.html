@@ -1,3 +1,37 @@
-<h1>Courses</h1>
-<p>Title: {{ ctrl.course.name }}</p>
-
+<section class="course-banner">
+    <div class="title-block">
+        <h1 class="course__title">{{ ctrl.course.name }}</h1>
+        <span class="course__tagline">{{ ctrl.course.tagline }}</span>
+    </div>
+</section>
+<div class="column">
+    <section class="row">
+        <div class='col-md-10 col-md-offset-1'>
+            <h2 class="section-title">Course Description</h2>
+            <center>
+                <img src="{{ ctrl.course.photo }}" width="636">
+            </center>
+            <center>
+                <p><strong><span style="color: #c65a57;"><span style="font-size: 28px;">{{ ctrl.course.description }}</span></span></strong></p>
+            </center>
+        </div>
+    </section>
+</div>
+<section class='course-instructor'>
+    <div class='column'>
+        <div class='row'>
+            <div class='col-md-10 col-md-offset-1'>
+                <div class='instructor__img-wrap'>
+                    <img alt="{{ ctrl.course.teacher_name }} " class="instructor__img" src="{{ ctrl.course.teacher_photo }}" />
+                </div>
+                <div class='instructor__details'>
+                    <div class='instructor__name'>Instructor:
+                        <br>{{ ctrl.course.teacher_name }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='col-sm-12'>
+        <center><a class="btn btn-primary btn-top-buy btn-purchase" href="#">Buy {{ ctrl.course.price }}</a></center>
+    </div>
+</section>
