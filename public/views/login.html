@@ -1,0 +1,15 @@
+<main class="page-wrap">
+    <hgroup>
+    </hgroup>
+    <form ng-submit="ctrl.submitLogin()">
+        <div class="group">
+            <input type="text" name="email" id="email" ng-model="ctrl.data.email"><span class="highlight"></span><span class="bar"></span>
+            <label>Email</label>
+        </div>
+        <div class="group">
+            <input type="password" name="password" id="password" ng-model="ctrl.data.password"><span class="highlight"></span><span class="bar"></span>
+            <label>Password</label>
+        </div>
+        <input type="submit" class="button buttonBlue" value="Login">
+    </form>
+</main>

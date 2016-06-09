@@ -7,7 +7,7 @@ var CourseSchema = new mongoose.Schema({
   tagline: String,
   teacher_name: String,
   teacher_photo: String,
-  price: String
+  price: { type: Number, min: 0, max: 9999.99 },
 }, { timestamps: true } );
 
 module.exports = mongoose.model('Course', CourseSchema);

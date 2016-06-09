@@ -208,3 +208,12 @@ img {
     width: auto;
 }
 
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 70px;
+    color: #777
+}
+
+
+
