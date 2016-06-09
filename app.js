@@ -13,6 +13,7 @@ var methodOverride = require('method-override');
 var routes         = require('./routes/index');
 var users          = require('./routes/users');
 var courses        = require('./routes/courses');
+var carts          = require('./routes/carts');
 
 var app = express();
 
@@ -40,6 +41,7 @@ app.use(express.static(path.join(__dirname, 'bower_components')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/api/courses', courses);
+app.use('/api/carts', carts);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -2,11 +2,10 @@ var mongoose = require('mongoose');
 var ObjectId = mongoose.Schema.Types.ObjectId;
 
 var CartCourseSchema = new mongoose.Schema({
-  course : {
+  courses : [{
     type : mongoose.Schema.Types.ObjectId,
     ref: 'Course'
-  },
-  qty : Number
+  }]
 });
 
 module.exports = mongoose.model('CartCourse', CartCourseSchema);

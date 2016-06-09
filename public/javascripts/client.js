@@ -28,10 +28,10 @@ angular.module('coursesApp')
                 controllerAs: "ctrl"
             })
             .state('cart', {
-              url:"/cart",
-              templateUrl:"views/cart.html",
-              controller:"cartCtrl",
-              controllerAs:"ctrl"
+                url: "/cart",
+                templateUrl: "views/cart.html",
+                controller: "cartsCtrl",
+                controllerAs: "ctrl"
             })
 
     });
@@ -59,12 +59,40 @@ angular.module('coursesApp')
 
 angular.module('coursesApp')
     .controller('coursesShowCtrl', function($http, $stateParams) {
-        console.log('moviesShowCtrl is alive!');
+        console.log('coursesShowCtrl is alive!');
 
         var ctrl = this;
         ctrl.course = {};
+        ctrl.cart;
+        var courseId = $stateParams.courseId;
 
-        $http.get('/api/courses/' + $stateParams.courseId).then(function(response) {
+        $http.get('/api/courses/' + courseId).then(function(response) {
             ctrl.course = response.data;
         });
+
+        ctrl.buy = function() {
+            console.log(courseId);
+            $http.post('api/carts/buy/' + courseId, {}).then(function(response) {
+                console.log('Your updated cart is:', response.data);
+                ctrl.cart = response.data;
+            });
+        }
+    });
+
+angular.module('coursesApp')
+    .controller('cartsCtrl', function($http, $stateParams) {
+        console.log('cartsCtrl is alive!');
+
+        var ctrl = this;
+        ctrl.carts = [];
+
+        ctrl.getCarts = function() {
+            $http.get('/api/carts').then(function(response) {
+                ctrl.carts = response.data;
+                console.log('ctrl.carts:', ctrl.carts);
+            });
+        };
+
+
+        ctrl.getCarts();
     });
