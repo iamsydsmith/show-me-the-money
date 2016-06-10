@@ -1,27 +1,24 @@
-    <!-- Header -->
-    <header>
-
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Did you know...</div>
-                <div class="intro-heading zoomIn animated">The Average household debt is $130,922</div>
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in">Did you know...</div>
+            <div class="intro-heading zoomIn animated">The Average household debt is $130,922</div>
             <div ng-controller="ScrollController as ctrl">
-              <a ng-click="gotoBottom()" class="page-scroll btn btn-xl">Change That</a>
+                <a ng-click="gotoBottom()" class="page-scroll btn btn-xl">Change That</a>
             </div>
-            </div>
         </div>
-
-        <br><br><br>
-
-        <div id="bottom" class="about jumbotron">
-          <h1>Show Me The Money</h1>
-          <p>We believe financial planning is for everyone. By definition financial planning is about creating a strategy to help you to achieve the life you've imagined for you and your family. That's why we started Show Me The Money. We want to help real people get a plan for their money, simply and affordably.</p>
-          <a ui-sref="courses" class="page-scroll btn btn-xl">See Our Courses</a>
-        </div>
-
-        <div class="container">
-          <div id = "map" class = "rChart datamaps"></div>
-        </div>
-    </header>
-
-    <script src="javascripts/map.js" defer></script>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="bottom" class="about jumbotron">
+        <h1>Show Me The Money</h1>
+        <p>We believe financial planning is for everyone. By definition financial planning is about creating a strategy to help you to achieve the life you've imagined for you and your family. That's why we started Show Me The Money. We want to help real people get a plan for their money, simply and affordably.</p>
+        <a ui-sref="courses" class="page-scroll btn btn-xl">See Our Courses</a>
+    </div>
+    <div class="container">
+        <div id="map" class="rChart datamaps"></div>
+    </div>
+</header>
+<script src="javascripts/map.js" defer></script>

@@ -58,7 +58,7 @@ angular.module('coursesApp')
     });
 
 angular.module('coursesApp')
-    .controller('coursesShowCtrl', function($http,$state, $stateParams) {
+    .controller('coursesShowCtrl', function($http, $state, $stateParams) {
         console.log('coursesShowCtrl is alive!');
 
         var ctrl = this;
@@ -75,7 +75,7 @@ angular.module('coursesApp')
             $http.post('api/carts/buy/' + courseId, {}).then(function(response) {
                 console.log('Your updated cart is:', response.data);
                 ctrl.cart = response.data;
-                 $state.go('cart');
+                $state.go('cart');
             });
         }
     });
@@ -95,19 +95,15 @@ angular.module('coursesApp')
             });
         };
 
-        ctrl.cartDetails = function(cartItems){
+        ctrl.cartDetails = function(cartItems) {
             ctrl.itemsInCart = [];
             ctrl.carttemp = cartItems[0].courses;
-            ctrl.carttemp.forEach(function(course){
-                $http.get('/api/courses/'+ course).then(function(response) {
-                ctrl.itemsInCart.push(response.data);
-                console.log('full description of items in cart:', ctrl.itemsInCart);
+            ctrl.carttemp.forEach(function(course) {
+                $http.get('/api/courses/' + course).then(function(response) {
+                    ctrl.itemsInCart.push(response.data);
+                    console.log('full description of items in cart:', ctrl.itemsInCart);
                 });
             });
-         }
-
-
-
-
+        }
         ctrl.getCarts();
     });

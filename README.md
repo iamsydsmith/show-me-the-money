@@ -4,7 +4,7 @@
 ##### Web Development Immersive, Cohort 6
 ##### Developer: [Sydney Smith](https://www.linkedin.com/in/iamsydneysmith)
 
-Show Me The Money is a personal finance site where you can buy courses to take your finances to the next level. A user can view all the courses, get in-depth look into each course and add/delete a course or courses to their cart.
+Show Me The Money is a personal finance app where users can buy courses to take their finances to the next level. A user can view all the available courses, get in-depth look into each course and add or delete a course or courses to or from his or her cart. Used D3.js for datamap of the average credit card debt in the United States.
 
 Deployed app: [https://show-me-money.herokuapp.com](https://show-me-money.herokuapp.com)<br>
 Trello board: [https://trello.com/b/lVIokSq2/project-4-show-me-the-money](https://trello.com/b/lVIokSq2/project-4-show-me-the-money)
