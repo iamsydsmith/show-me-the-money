@@ -19,6 +19,19 @@ Trello board: [https://trello.com/b/lVIokSq2/project-4-show-me-the-money](https:
 - Bootstrap
 - Heroku
 
+## USER STORIES
+A user of the Show Me The Money Academy is a person looking to get their financial life in order.
+
+- A user will be able to browse the courses at Show Me The Money Academy.
+
+- A user will be able to get in-depth look into each course at Show Me The Money Academy.
+
+- A user will be able to put a course in their cart.
+
+- A user will be able to delete a course from their cart.
+
+- A user will be able to see the total price in their cart.
+
 ## WIREFRAMES
 
 ![Homepage](https://github.com/iamsydsmith/show-me-the-money/blob/master/public/img/images/homepage.png)
@@ -29,6 +42,12 @@ Trello board: [https://trello.com/b/lVIokSq2/project-4-show-me-the-money](https:
 
 ![View Course](https://github.com/iamsydsmith/show-me-the-money/blob/master/public/img/images/course-show.png)
 
+## MAJOR HURDLES
+- Thinking of a good idea
+- D3 datamap
+- Connecting Course Model to Cart Model
+
 ## FUTURE VISION
+- Finish my cart page (add total price in cart, be able to delete from cart)
 - Connect to stripe
 - User authentication
