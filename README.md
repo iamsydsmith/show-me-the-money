@@ -32,6 +32,9 @@ A user of the Show Me The Money Academy is a person looking to get their financi
 
 - A user will be able to see the total price in their cart.
 
+## APP SCREENSHOTS
+![Homepage](https://github.com/iamsydsmith/show-me-the-money/blob/master/public/img/screen-home.png) ![D3 MAP](https://github.com/iamsydsmith/show-me-the-money/blob/master/public/img/screen-d3-map.png) ![Courses](https://github.com/iamsydsmith/show-me-the-money/blob/master/public/img/screen-courses.png) ![Cart](https://github.com/iamsydsmith/show-me-the-money/blob/master/public/img/screen-cart.png)
+
 ## WIREFRAMES
 
 ![Homepage](https://github.com/iamsydsmith/show-me-the-money/blob/master/public/img/images/homepage.png)
