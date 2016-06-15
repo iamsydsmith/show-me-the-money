@@ -34,6 +34,6 @@
     <div class='col-sm-12'>
         <center><a class="btn btn-primary btn-top-buy btn-purchase"
                    href="#"
-                   ng-click="ctrl.buy()">Buy ${{ ctrl.course.price }}</a></center>
+                   ng-click="ctrl.buy()">Buy {{ ctrl.course.price | currency }}</a></center>
     </div>
 </section>
